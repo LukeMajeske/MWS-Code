@@ -1,0 +1,79 @@
+@import url(../css/fonts.css);
+html body{
+    margin:0%;
+    box-sizing:border-box;
+    overflow-x: hidden;
+}
+
+
+/*------GLOBAL VARS ----------*/
+:root{
+    
+    /*THEME COLORS*/
+    --text-grey:#3f45954;
+    
+    /*THEME FONT FAMILY*/
+    --Roboto:'Roboto';
+}
+
+/*---x--GLOBAL VARS ------x---*/
+
+/*-----------GLOBAL CLASSES----------*/
+a{
+    text-decoration: none;
+    color:var(--text-grey);
+}
+
+.flex-row{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+/*----x------GLOBAL CLASSES---x------*/
+
+/*-- --------- navbar ------------ --*/
+.nav{
+    background:white;
+    padding:0 2rem;
+    height:0rem;
+    min-height: 10vh;
+    overflow:hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .nav-items{
+    list-style-type: none;
+    display:flex;
+    margin:0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+    position: relative;
+}
+.nav .nav-brand a{
+    font-size:1.6rem;
+    padding:1rem 0;
+    display: block;
+    font-family:var(--Roboto);
+}
+
+.nav .social{
+    padding:1rem 1rem;
+    
+}
+/*-- ----x---- navbar -------x---- */
+
+
+/*-------Responsive Navbar-------*/
+@media only screen and (max-width:750px){
+    .nav{
+        
+    }
+}
+/*-x-----Responsive Navbar-----x-*/
